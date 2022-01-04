@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using WooingApi.Models;
 
 namespace WooingApi.Data
 {
@@ -6,6 +7,8 @@ namespace WooingApi.Data
     {
         public DataContext(DbContextOptions options) : base(options)
         {
+            
         }
+        public DbSet<User>? Users { get; set; }
     }
 }

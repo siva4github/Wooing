@@ -2,7 +2,18 @@ Dotnet
 
 # help
 -> dotnet -h
+
 # Create a new service project
 -> dotnet new webapi -n PlatformService
+
 # to add git ignore
 -> dotnet new gitignore
+
+# to generate migrations
+-> dotnet ef migrations add initialmigration
+
+# ef update to database
+-> dotnet ef database update 
+# EF Update
+-> dotnet tool update --global dotnet-ef
+
