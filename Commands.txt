@@ -1,0 +1,8 @@
+Dotnet
+
+# help
+-> dotnet -h
+# Create a new service project
+-> dotnet new webapi -n PlatformService
+# to add git ignore
+-> dotnet new gitignore

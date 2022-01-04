@@ -1,0 +1,151 @@
+-- Building a walking skelton API
+	Create new .Net API Project
+	Add required project refernces
+	Create DbContext & Entities	
+	ConnectionString SqlLite - "Data source=datingapp.db"
+-- Building a walking skelton Ui
+	Create angular application
+	Add bootstrap and fonts-awesome
+-- Authentication
+	Update User entity
+	Create base api controller and account AccountController with register endpoint
+	Create DTOs
+	Adding Validations
+	Adding Login endpoint
+	JSON Web tokens, Adding Token Service, Token logic
+	Add authentication middleware & extension method
+- Ui Login & Register
+	Create navigation bar
+	using angular template forms for login (Forms Module)
+	using angular services (a service is singleton but components are destoryed if not used)
+	Injecting services into components
+	Add user login conditions to show/hide controls
+	Add dropdown to show login details and logout
+	use ngx-bootstrap to update login dropdown and css for it
+	Persisting the login
+	update account service and appcomponent and nav components
+	using async pipe for login in nav components
+	replace currentuser from nav to account service
+	create home component and register form
+- Add routing in Ui
+	Add few more componets and add routing
+	Add toaster service
+	Add themes to app using bootswatch and add reference in angular.json
+	Add route guard to protect route login
+- Error Handling
+	Just for testing create one error controller to handling server errors
+	Add exception handling middleware
+	Test controllere login
+	Add interceptor in Ui and handle errors with new components and toaster
+- Extending Api in
+	Extend the user entity
+	add DateTime extension to calculate age
+	Generate SeedData - use json generator to generate data
+	Seeding data 
+	Create repository IUserRepository Update/SaveAllAsync/GetUsersAsync/GetUserByIdAsync/GetUserByUsernameAsync
+	Add include photos to users to get photos but it will create circular reference to avoid this create MemberDto and map values
+	Automapper queryable extentions - Add GetMemebers and GetMember in repository and update age in automapper
+	Update Ui project with MemberDto/PhotoDto and memberservice
+	Retrieve list of members and create member cards and apply styles 
+	Add animated animated buttons
+	Add interceptor to add kwt token to all the requests
+	Update route for members
+	Design member detail page
+	Add photo gallery
+- Updating resources
+	Create member edit component
+	Add candeactivate route to avoid unsaved changes
+	Update persisting changes in API
+	Update user logic in Ui
+	Add loading indicators
+	using the service to store state (return members from array using observaables of/pipe/map)
+-  Adding Photo upload functionality using Cloudinary Account
+	Configure Cloudinary in Api
+	Configure Cloudinary in Ui
+	Photo edit/upload funationality
+	Setting main photo
+	Deleting photos Api/Ui
+- Reactive forms
+	update registerForm with reactive form
+	Client Side validation using reactive form(Reactive Forms)
+	Adding custom validations in ui
+	Add validation feedback class.is-invalid and feed back text
+	Creating reusable text input
+	using FormBuilder service
+	Expanding registerform take additional properties
+	Add reusable date input
+	Update API register method
+- Paging, Sorting and filtering
+	Adding a paged list class
+	Adding helper classes for pagination and use pagination classes
+	Setting up client pagination
+	using angular bootstrap pagination component
+	Add filters to the API and clan member service
+	Add filter buttons in client and sorting functionality
+	Adding an action filer to record user last activity
+	Update sorting on the client
+	Formating dates in member details page using {{member.create | date: 'longDate'}} or 'dd MMM YYYY'
+	And als use ngx-timeago to show last active in member details
+	Restoring the caching for members (remember sorting/filters)
+	Remmebring the filters for a user in the service
+Adding the like User feature
+	Adding likes entity
+	adding likes repository and implementation of this
+	new controller to handle likes
+	setting up likes functionality in angular app
+	Add likes component and pagination
+Adding messages feature
+	Adding messges entity, repository and implementation
+	new message controller
+	Design messages in angular app
+	design input message box
+	add message thread in Client
+	styling the thread and activate message tab
+	upadte query params/ route resolver / sending message / deleting messages
+Identity and role management
+	Setting up entities and reconfigure DbContext
+	Configure the start up class
+	Refactoring and adding new migration
+	Updating the seed method
+	updating the account controller
+	adding roles to app
+	adding roles to JWT
+	adding 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
