@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using WooingApi.Data;
+using WooingApi.Interfaces;
 using WooingApi.Profiles;
+using WooingApi.Services;
 
 namespace WooingApi.Extensions;
 
@@ -14,6 +16,9 @@ public static class ApplicationServiceExtensions
 
         // AutoMapper
         services.AddAutoMapper(typeof(WooingProfiles).Assembly);
+
+        // services
+        services.AddScoped<ITokenService, TokenService>();
 
         return services;
     }
