@@ -1,12 +1,12 @@
--- Building a walking skelton API
+- Building a walking skelton API
 	Create new .Net API Project
 	Add required project refernces
 	Create DbContext & Entities	
 	ConnectionString SqlLite - "Data source=datingapp.db"
--- Building a walking skelton Ui
+- Building a walking skelton Ui
 	Create angular application
 	Add bootstrap and fonts-awesome
--- Authentication
+- Authentication
 	Update User entity
 	Create base api controller and account AccountController with register endpoint
 	Create DTOs
@@ -88,13 +88,13 @@
 	And als use ngx-timeago to show last active in member details
 	Restoring the caching for members (remember sorting/filters)
 	Remmebring the filters for a user in the service
-Adding the like User feature
+- Adding the like User feature
 	Adding likes entity
 	adding likes repository and implementation of this
 	new controller to handle likes
 	setting up likes functionality in angular app
 	Add likes component and pagination
-Adding messages feature
+- Adding messages feature
 	Adding messges entity, repository and implementation
 	new message controller
 	Design messages in angular app
@@ -102,7 +102,7 @@ Adding messages feature
 	add message thread in Client
 	styling the thread and activate message tab
 	upadte query params/ route resolver / sending message / deleting messages
-Identity and role management
+- Identity and role management
 	Setting up entities and reconfigure DbContext
 	Configure the start up class
 	Refactoring and adding new migration

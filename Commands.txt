@@ -17,3 +17,6 @@ Dotnet
 # EF Update
 -> dotnet tool update --global dotnet-ef
 
+Angular
+
+
