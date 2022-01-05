@@ -10,7 +10,7 @@ using WooingApi.Data;
 namespace WooingApi.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20220104162603_UserCreated")]
+    [Migration("20220105071810_UserCreated")]
     partial class UserCreated
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
