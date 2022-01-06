@@ -18,5 +18,6 @@ Dotnet
 -> dotnet tool update --global dotnet-ef
 
 Angular
-
+# generate component
+> ng g c --skip-tests
 
