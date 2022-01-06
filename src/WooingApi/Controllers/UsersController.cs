@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WooingApi.Controllers
 {
-    [Authorize]
     public class UsersController : BaseApiController
     {
         [HttpGet]

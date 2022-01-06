@@ -1,5 +1,6 @@
 using System.Security.Cryptography;
 using System.Text;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WooingApi.Data;
@@ -19,6 +20,7 @@ public class AccountController : BaseApiController
     }
 
     [HttpPost("register")]
+    [AllowAnonymous]
     public async Task<ActionResult<UserDto>> Register(RegisterDto registerDto)
     {
         if (await this.UserExists(registerDto.UserName)) return BadRequest("Username is taken");
@@ -42,6 +44,7 @@ public class AccountController : BaseApiController
     }
 
     [HttpPost("login")]
+    [AllowAnonymous]
     public async Task<ActionResult<UserDto>> Login(LoginDto loginDto)
     {
         var user = await _context.Users.FirstOrDefaultAsync(u => u.UserName.Equals(loginDto.UserName));
