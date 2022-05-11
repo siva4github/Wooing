@@ -21,3 +21,5 @@ Angular
 # generate component
 > ng g c --skip-tests
 
+# Themes - bootswatch themes
+> npm install bootswatch
